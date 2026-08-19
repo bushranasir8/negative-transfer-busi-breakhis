@@ -1,5 +1,8 @@
 # Negative transfer from histopathology to breast ultrasound
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22013504.svg)](https://doi.org/10.5281/zenodo.22013504)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Aligning unlabelled breast histopathology with breast ultrasound by domain-adversarial training
 does not help. It hurts, by ten accuracy points. This repository holds the code and the result
 artifacts behind that claim.
@@ -182,8 +185,15 @@ It is dead code, left in place because the notebook is released as executed.
 
 ## How to cite
 
-Cite the paper. Machine-readable metadata for this repository is in `CITATION.cff`, which GitHub
-renders through the **Cite this repository** button in the sidebar.
+Cite the paper. If you need to cite this repository specifically, it is archived on Zenodo:
+
+- **Concept DOI — [10.5281/zenodo.22013504](https://doi.org/10.5281/zenodo.22013504)** always
+  resolves to the most recent version. Prefer this one.
+- Version DOI — [10.5281/zenodo.22013505](https://doi.org/10.5281/zenodo.22013505) is pinned to
+  `v1.0.0`, the snapshot described here.
+
+Machine-readable metadata is in `CITATION.cff`, which GitHub renders through the **Cite this
+repository** button in the sidebar.
 
 ## License
 

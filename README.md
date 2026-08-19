@@ -11,11 +11,26 @@ Code and result artifacts for the paper:
 
 | Path | What it is |
 |---|---|
-| `cross_domain_experiments.ipynb` | The complete experimental notebook, stored with its outputs: data loading, the SSDAVT model, the HViTE-U ensemble with and without the domain-adversarial term, the SimCLR pretraining run on the pooled corpus, and a cross-domain episodic routine. Released exactly as it was executed. |
+| `cross_domain_experiments.ipynb` | The complete experimental notebook, stored with its outputs: data loading, the SSDAVT model, the HViTE-U ensemble with and without the domain-adversarial term, the SimCLR pretraining run on the pooled corpus, and a cross-domain episodic routine. Executable code and stored outputs are exactly as they were run; only comments were tidied for readability. |
 | `results/cd_msvte_u_test_report.txt` | Per-class test report for the **adversarially trained** HViTE-U configuration (69.37% accuracy, macro-F1 0.5099). |
 | `results/ssdavt_test_report.txt` | Per-class test report for SSDAVT (58.13% accuracy, macro-F1 0.3078). |
 | `results/cd_hcml_simclr_loss.png` | SimCLR pretraining loss on the pooled BreaKHis + BUSI corpus. |
 | `results/ssdavt_losses.png`, `results/ssdavt_val_acc.png` | SSDAVT training curves. |
+
+## Names in the code vs. names in the paper
+
+The notebook predates the paper's terminology. The mapping is:
+
+| In the notebook | In the paper |
+|---|---|
+| `MSVTE-U`, BUSI-only (`train_msvte_u_bus_only`) | **HViTE-U** -- the baseline arm |
+| `CD-MSVTE-U`, cross-domain (`train_single_cd_vit`) | **HViTE-U + DA** -- the adversarial arm |
+| `SSDAVT` (`train_ssdavt`) | SSDAVT |
+| `CD-HCML`, SimCLR stage (`train_simclr_encoder_cross_domain`) | Contrastive pretraining |
+| `CD-HCML`, ProtoNet stage (`train_cd_hcml_protonet`) | Not reported -- see below |
+
+The stored outputs print the original machine's absolute paths under `D:\My Thesis\...`. They
+are left as they were written; the paths to change are listed under **Data** below.
 
 The controlled ablation that carries the paper's conclusion — HViTE-U with and without the
 adversarial term — is implemented in the notebook cells defining `SingleViTClassifier` /

@@ -19,15 +19,16 @@ Code and result artifacts for the paper:
 
 ## Names in the code vs. names in the paper
 
-The notebook predates the paper's terminology. The mapping is:
+The notebook uses the working names the experiments were run under; the paper uses the names
+introduced in its Methods section. They refer to the same configurations:
 
 | In the notebook | In the paper |
 |---|---|
-| `MSVTE-U`, BUSI-only (`train_msvte_u_bus_only`) | **HViTE-U** -- the baseline arm |
-| `CD-MSVTE-U`, cross-domain (`train_single_cd_vit`) | **HViTE-U + DA** -- the adversarial arm |
+| `MSVTE-U`, BUSI-only (`train_msvte_u_bus_only`) | **HViTE-U** — the baseline arm |
+| `CD-MSVTE-U`, cross-domain (`train_cd_msvte_u`) | **HViTE-U + DA** — the adversarial arm |
 | `SSDAVT` (`train_ssdavt`) | SSDAVT |
 | `CD-HCML`, SimCLR stage (`train_simclr_encoder_cross_domain`) | Contrastive pretraining |
-| `CD-HCML`, ProtoNet stage (`train_cd_hcml_protonet`) | Not reported -- see below |
+| `CD-HCML`, ProtoNet stage (`train_cd_hcml_protonet`) | Not reported — see *A defect in the episodic routine* below |
 
 The stored outputs print the original machine's absolute paths under `D:\My Thesis\...`. They
 are left as they were written; the paths to change are listed under **Data** below.
@@ -44,7 +45,9 @@ accuracy and 0.7732 macro-F1 — is reported from the original experimental reco
 classification report file was not archived separately and is therefore not in this
 repository.** The training and evaluation routine that produces it is present in the notebook
 (`train_msvte_u_bus_only`) and will regenerate it; note that the notebook as executed invokes
-the adversarial and episodic routines, not this one.
+the adversarial and episodic routines, not this one. That name is bound twice in the same cell:
+the later, complete definition is the one that takes effect, and the three-line stub above it is
+dead code left in place because the notebook is released as executed.
 
 Trained checkpoints are not included; the `models/` directory was not retained.
 

@@ -30,6 +30,15 @@ authors:
       School of Systems and Technology, University of Management and Technology (UMT),
       Lahore, Pakistan
 license: MIT
+version: 1.0.0
+date-released: '2026-08-19'
+repository-code: 'https://github.com/bushranasir8/negative-transfer-busi-breakhis'
+abstract: >-
+  Code and result artifacts accompanying a controlled ablation showing that
+  domain-adversarial alignment of unlabelled breast histopathology with breast
+  ultrasound produces negative transfer: adding the adversarial term to an
+  otherwise identical Vision Transformer ensemble lowers ultrasound test accuracy
+  from 79.37 to 69.37 per cent and macro-F1 from 0.7732 to 0.5099.
 keywords:
   - negative transfer
   - domain-adversarial training

@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: >-
+  Negative Transfer from Histopathology to Breast Ultrasound Classification:
+  A Controlled Ablation of Domain-Adversarial Alignment
+message: If you use this code, please cite the associated paper.
+type: software
+authors:
+  - given-names: Bushra
+    family-names: Nasir
+    orcid: https://orcid.org/0009-0006-9349-0919
+    affiliation: >-
+      School of Computing, National University of Computer and Emerging Sciences
+      (FAST-NUCES), Lahore, Pakistan
+  - given-names: Ahmad Muzaffar
+    family-names: Khan
+    orcid: https://orcid.org/0009-0002-5943-8165
+    affiliation: >-
+      School of Computing, National University of Computer and Emerging Sciences
+      (FAST-NUCES), Lahore, Pakistan
+  - given-names: Hamid Muzaffar
+    family-names: Khan
+    orcid: https://orcid.org/0009-0009-9900-8267
+    affiliation: >-
+      School of Electrical Engineering and Computer Science, National University of
+      Sciences and Technology (NUST), Islamabad, Pakistan
+  - given-names: Kashif
+    family-names: Zafar
+    orcid: https://orcid.org/0000-0001-8139-2269
+    affiliation: >-
+      School of Systems and Technology, University of Management and Technology (UMT),
+      Lahore, Pakistan
+license: MIT
+keywords:
+  - negative transfer
+  - domain-adversarial training
+  - breast ultrasound
+  - histopathology
+  - vision transformer
+  - medical image classification

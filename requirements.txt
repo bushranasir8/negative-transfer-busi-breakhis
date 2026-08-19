@@ -1,0 +1,10 @@
+# Versions were not recorded at run time, so nothing is pinned.
+# Run on a single CUDA GPU under Anaconda.
+torch
+torchvision
+timm
+numpy
+scikit-learn
+matplotlib
+pillow
+tqdm
